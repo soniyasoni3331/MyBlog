@@ -28,11 +28,19 @@ export default function RTE({name, controle, label, defaultValue =""}) {
                         "anchor",
                         "searchreplace",
                         "visualblocks",
-                        "image",
-
-
-
-                    ]
+                        "code",
+                        "fullscreen",
+                        "insertdatetime",
+                        "media",
+                        "table",
+                        "code",
+                        "help",
+                        "wordcount",
+                        "anchor",
+                    ],
+                    toolbar: 
+                    "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | remove format | help",
+                    content_style: "body"
                 }}
                 />
             )}
