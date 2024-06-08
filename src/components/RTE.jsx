@@ -15,6 +15,7 @@ export default function RTE({name, controle, label, defaultValue =""}) {
                 <Editor
                 initialValue={defaultValue}
                 init={{
+                    initialValue: defaultValue,
                     height: 500,
                     menubar: false,
                     plugins: [
@@ -42,6 +43,7 @@ export default function RTE({name, controle, label, defaultValue =""}) {
                     "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | remove format | help",
                     content_style: "body"
                 }}
+                onEditorChange={onChange}
                 />
             )}
         />
